@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft, Filter, Eye, Maximize, Minimize } from 'lucide-react';
 import './Header.css';
 
