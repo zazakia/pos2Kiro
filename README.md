@@ -28,8 +28,8 @@ A modern Point of Sale (POS) system built with React, featuring product manageme
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd pos-system
+git clone https://github.com/zazakia/pos2Kiro.git
+cd pos2Kiro
 ```
 
 2. Install dependencies:
