@@ -18,7 +18,6 @@ const Header = ({ onFilterClick, onViewClick, isFullscreen, onFullscreenToggle }
           
           <button className="header-btn view-btn" onClick={onViewClick}>
             <Eye size={16} />
-            <span>Product View</span>
           </button>
 
           <button 

@@ -55,12 +55,15 @@
 }
 
 .view-btn {
-  background: #9c27b0;
+  background: #f44336;
   color: white;
+  padding: 8px;
+  min-width: 32px;
+  justify-content: center;
 }
 
 .view-btn:hover {
-  background: #7b1fa2;
+  background: #d32f2f;
 }
 
 .fullscreen-btn {
