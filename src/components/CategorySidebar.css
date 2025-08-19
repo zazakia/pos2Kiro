@@ -1,0 +1,38 @@
+.category-sidebar {
+  width: 100px;
+  background: #f8f9fa;
+  padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e9ecef;
+}
+
+.category-item {
+  padding: 12px 8px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+  line-height: 1.2;
+}
+
+.category-item:hover {
+  background: #e9ecef;
+  color: #333;
+}
+
+.category-item.active {
+  background: #e91e63;
+  color: white;
+  border-left-color: #c2185b;
+  font-weight: 600;
+}
+
+.category-item.active:hover {
+  background: #c2185b;
+}

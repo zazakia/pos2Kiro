@@ -1,0 +1,247 @@
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e3a5f;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 4px;
+  min-height: 70px;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.product-image {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+  color: white;
+  line-height: 1.2;
+}
+
+.product-description {
+  font-size: 10px;
+  color: #b0c4de;
+  margin: 0 0 2px 0;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.quantity-display {
+  background: #4CAF50;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 50px;
+}
+
+.quantity-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.quantity-label {
+  display: block;
+  font-size: 8px;
+  color: white;
+  opacity: 0.9;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.clickable:active {
+  transform: translateY(0);
+}
+/* G
+rid View Styles */
+.product-card.grid-card {
+  flex-direction: column;
+  padding: 12px;
+  min-height: auto;
+  height: 160px;
+  justify-content: space-between;
+}
+
+.grid-product-image {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  align-self: center;
+}
+
+.grid-product-info {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-product-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+  color: white;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.grid-product-price {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.grid-quantity-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.grid-quantity-value {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  background: #4CAF50;
+  padding: 4px 8px;
+  border-radius: 4px;
+}/* 
+Text View Styles */
+.product-card.text-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 8px 12px;
+  color: #333;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0;
+  min-height: auto;
+  height: auto;
+}
+
+.product-card.text-card:hover {
+  background: #f8f9fa;
+}
+
+.text-product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.text-product-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  text-align: left;
+}
+
+.text-product-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e91e63;
+  margin-right: 12px;
+}
+
+.text-quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-quantity-btn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #666;
+}
+
+.text-quantity-btn:hover {
+  border-color: #e91e63;
+  color: #e91e63;
+}
+
+.text-quantity-btn.increase:hover {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+.text-quantity-btn.decrease:hover {
+  background: #f44336;
+  border-color: #f44336;
+  color: white;
+}
+
+.text-quantity-btn:disabled {
+  background: #f5f5f5;
+  border-color: #ddd;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.text-quantity-btn:disabled:hover {
+  background: #f5f5f5;
+  border-color: #ddd;
+  color: #ccc;
+}
+
+.text-quantity-value {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 20px;
+  text-align: center;
+}

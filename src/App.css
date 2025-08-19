@@ -1,0 +1,80 @@
+.mobile-container {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.mobile-container.fullscreen-mode {
+  max-width: 100%;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  padding-bottom: 200px; /* Space for fixed bottom sections */
+}
+
+/* Status bar simulation */
+.status-bar {
+  background: white;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.status-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.battery {
+  width: 24px;
+  height: 12px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  position: relative;
+}
+
+.battery::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 3px;
+  width: 2px;
+  height: 6px;
+  background: #333;
+  border-radius: 0 1px 1px 0;
+}/*
+ Fullscreen responsive adjustments */
+@media (min-width: 768px) {
+  .mobile-container.fullscreen-mode .main-content {
+    padding-bottom: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-container.fullscreen-mode .main-content {
+    padding-bottom: 240px;
+  }
+}

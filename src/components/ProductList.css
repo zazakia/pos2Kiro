@@ -1,0 +1,33 @@
+.product-list {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: white;
+}
+
+.product-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-container.grid-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.product-container.text-view {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.no-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #666;
+  font-size: 14px;
+}

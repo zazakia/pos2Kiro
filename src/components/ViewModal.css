@@ -1,0 +1,184 @@
+.view-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.view-modal {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  max-height: 80vh;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.view-header {
+  background: #9c27b0;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.view-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.view-section {
+  margin-bottom: 24px;
+}
+
+.view-section h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.view-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 2px solid #e9ecef;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.view-btn:hover {
+  border-color: #9c27b0;
+  background: #f8f9fa;
+}
+
+.view-btn.active {
+  border-color: #9c27b0;
+  background: #f3e5f5;
+}
+
+.view-btn svg {
+  color: #9c27b0;
+  flex-shrink: 0;
+}
+
+.view-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.view-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.view-desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.display-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.option-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #9c27b0;
+  cursor: pointer;
+}
+
+.view-actions {
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #e9ecef;
+}
+
+.cancel-btn, .save-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn {
+  background: #f8f9fa;
+  color: #666;
+  border: 2px solid #e9ecef;
+}
+
+.cancel-btn:hover {
+  background: #e9ecef;
+}
+
+.save-btn {
+  background: #9c27b0;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #7b1fa2;
+}
