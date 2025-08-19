@@ -16,7 +16,7 @@ body {
 .mobile-container {
   max-width: 375px;
   margin: 0 auto;
-  background: white;
+  background: #ffe0b3;
   min-height: 100vh;
   position: relative;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
